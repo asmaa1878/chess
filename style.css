@@ -1,0 +1,27 @@
+
+table.damier{
+  border: 4px solid #000;
+  border-collapse: collapse;
+  width: 500px;
+  height: 500px;
+}
+
+table tr td{
+  text-align: center;
+  font-size: 30px;
+}
+table tr :hover{
+  color: #666;
+  background:rgba(37,88,228,0.7);
+}
+table tr td#cell-Noir-8B,#cell-Noire-8D,#cell-Noir-8F,#cell-Noir-8H,#cell-Noir-7A,#cell-Noir-7C,#cell-Noir-7E,#cell-Noir-7G,#cell-Noir-6B,#cell-Noir-6D,#cell-Noir-6F,#cell-Noir-6H,#cell-Noir-5A,#cell-Noir-5C,#cell-Noir-5E,#cell-Noir-5G,#cell-Noir-4B,#cell-Noir-4D,#cell-Noir-4F,#cell-Noir-4H,#cell-Noir-3A,#cell-Noir-3C,#cell-Noir-3E,#cell-Noir-3G,#cell-Noir-2B,#cell-Noir-2D,#cell-Noir-2F,#cell-Noir-2H,#cell-Noir-1A,#cell-Noir-1C,#cell-Noir-1E,#cell-Noir-1G{
+
+background-color: grey;
+
+}
+#tableau {
+  margin-top: 15%;
+  margin-right: 30%;
+  margin-left: 40%;
+  margin-bottom: 10%;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jeu d'échec</title>
+    <script type="text/javascript"></script>
+    <script src="js/chess.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    <div id="tableau">
+
+    <table class='damier'>
+      <tr> <!-- 8 -->
+        <td id="Cell-Blanc-8A" class="col-md-1 cell"><span id="p-Noir-Tours-1" class="Noir-piece">&#9820</span></td>
+        <td id="cell-Noir-8B" class="col-md-1 cell"><span id="p-Noir-Cavalier-1" class="Noir-piece">&#9822</span></td>
+        <td id="cell-Blanc-8C" class="col-md-1 cell"><span id="p-Noir-Fou-1" class="Noir-piece">&#9821</span></td>
+        <td id="cell-Noire-8D" class="col-md-1 cell"><span id="p-Noir-Reine" class="Noir-piece">&#9819</span></td>
+        <td id="cell-Blanc-8E" class="col-md-1 cell"><span id="p-Noir-Roi" class="Noir-piece">&#9818</span></td>
+        <td id="cell-Noir-8F" class="col-md-1 cell"><span id="p-Noir-Fou-2" class="Noir-piece">&#9821</span></td>
+        <td div id="cell-Blanc-8G" class="col-md-1 cell"><span id="p-Noir-Cavalier-2" class="Noir-piece">&#9822</span></td>
+        <td id="cell-Noir-8H" class="col-md-1 cell"><span id="p-Noir-Tours-2" class="Noir-piece">&#9820</span></td>
+      </tr>
+      <tr> <!--7-->
+
+        <td id="cell-Noir-7A" class="col-md-1 cell"><span id="p-Noir-pion-1" class="Noir-piece">&#9823</span></td>
+        <td id="cell-Blanc-7B" class="col-md-1 cell"><span id="p-Noir-pion-2" class="Noir-piece">&#9823</span></td>
+        <td id="cell-Noir-7C" class="col-md-1 cell"><span id="p-Noir-pion-3" class="Noir-piece">&#9823</span></td>
+        <td id="cell-Blanc-7D" class="col-md-1 cell"><span id="p-Noir-pion-4" class="Noir-piece">&#9823</span></td>
+        <td id="cell-Noir-7E" class="col-md-1 cell"><span id="p-Noir-pion-5" class="Noir-piece">&#9823</span></td>
+        <td id="cell-Blanc-7F" class="col-md-1 cell"><span id="p-Noir-pion-6" class="Noir-piece">&#9823</span></td>
+        <td id="cell-Noir-7G" class="col-md-1 cell"><span id="p-Noir-pion-7" class="Noir-piece">&#9823</span></td>
+        <td id="cell-Blanc-7H" class="col-md-1 cell"><span id="p-Noir-pion-8" class="Noir-piece">&#9823</span></td>
+      </tr>
+
+      <tr> <!-- 6 -->
+        <td id="cell-Blanc-6A" class="col-md-1 cell"></td>
+        <td id="cell-Noir-6B" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-6C" class="col-md-1 cell"></td>
+        <td id="cell-Noir-6D" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-6E" class="col-md-1 cell"></td>
+        <td id="cell-Noir-6F" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-6G" class="col-md-1 cell"></td>
+        <td id="cell-Noir-6H" class="col-md-1 cell"></td>
+      </tr>
+      <tr> <!--5-->
+        <td id="cell-Noir-5A" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-5B" class="col-md-1 cell"></td>
+        <td id="cell-Noir-5C" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-5D" class="col-md-1 cell"></td>
+        <td id="cell-Noir-5E" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-5F" class="col-md-1 cell"></td>
+        <td id="cell-Noir-5G" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-5H" class="col-md-1 cell"></td>
+      </tr>
+      <tr> <!-- 4 -->
+        <td id="cell-Blanc-4A" class="col-md-1 cell"></td>
+        <td id="cell-Noir-4B" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-4C" class="col-md-1 cell"></td>
+        <td id="cell-Noir-4D" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-4E" class="col-md-1 cell"></td>
+        <td id="cell-Noir-4F" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-4G" class="col-md-1 cell"></td>
+        <td id="cell-Noir-4H" class="col-md-1 cell"></td>
+      </tr>
+      <tr> <!--3-->
+        <td id="cell-Noir-3A" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-3B" class="col-md-1 cell"></td>
+        <td id="cell-Noir-3C" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-3D" class="col-md-1 cell"></td>
+        <td id="cell-Noir-3E" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-3F" class="col-md-1 cell"></td>
+        <td id="cell-Noir-3G" class="col-md-1 cell"></td>
+        <td id="cell-Blanc-3H" class="col-md-1 cell"></td>
+      </tr>
+
+      <tr> <!-- 2 -->
+        <td id="cell-Blanc-2A" class="col-md-1 cell"><span id="p-Blanc-pion-1" class="Blanc-piece">&#9817</span></td>
+        <td id="cell-Noir-2B" class="col-md-1 cell"><span id="p-Blanc-pion-2" class="Blanc-piece">&#9817</span></td>
+        <td id="cell-Blanc-2C" class="col-md-1 cell"><span id="p-Blanc-pion-3" class="Blanc-piece">&#9817</span></td>
+        <td id="cell-Noir-2D" class="col-md-1 cell"><span id="p-Blanc-pion-4" class="Blanc-piece">&#9817</span></td>
+        <td id="cell-Blanc-2E" class="col-md-1 cell"><span id="p-Blanc-pion-5" class="Blanc-piece">&#9817</span></td>
+        <td id="cell-Noir-2F" class="col-md-1 cell"><span id="p-Blanc-pion-6" class="Blanc-piece">&#9817</span></td>
+        <td id="cell-Blanc-2G" class="col-md-1 cell"><span id="p-Blanc-pion-7" class="Blanc-piece">&#9817</span></td>
+        <td id="cell-Noir-2H" class="col-md-1 cell"><span id="p-Blanc-pion-8" class="Blanc-piece">&#9817</span></td>
+      </tr>
+      <tr> <!--1-->
+        <td id="cell-Noir-1A" class="col-md-1 cell"><span id="p-Blanc-Tours-1" class="Blanc-piece">&#9814</span></td>
+        <td id="cell-Blanc-1B" class="col-md-1 cell"><span id="p-Blanc-Cavalier-1" class="Blanc-piece">&#9816</span></td>
+        <td id="cell-Noir-1C" class="col-md-1 cell"><span id="p-Blanc-Fou-1" class="Blanc-piece">&#9815</span></td>
+        <td id="cell-Blanc-1D" class="col-md-1 cell"><span id="p-Blanc-Reine" class="Blanc-piece">&#9813</span></td>
+        <td id="cell-Noir-1E" class="col-md-1 cell"><span id="p-Blanc-Roi" class="Blanc-piece">&#9812</span></td>
+        <td id="cell-Blanc-1F" class="col-md-1 cell"><span id="p-Blanc-Fou-2" class="Blanc-piece">&#9815</span></td>
+        <td id="cell-Noir-1G" class="col-md-1 cell"><span id="p-Blanc-Cavalier-2" class="Blanc-piece">&#9816</span></td>
+        <td  id="cell-Blanc-1H" class="col-md-1 cell"><span id="p-Blanc-Tours-2" class="Blanc-piece">&#9814</span></td>
+      </tr>
+
+    </table>
+
+  </div>
+  </body>
+</html>
